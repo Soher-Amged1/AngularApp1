@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+}
+.left,.right{
+    width:75px;
+    height: 4px;
+    background-color: rgb(44, 62, 80);
+}
+.layer{
+    opacity: 0;
+}
+.layer:hover{
+opacity: 1;
+}
+#modal{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 255, 255, 0.296);
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.innermodal{
+    z-index: 5;
+    width: 50%;
+    height: 500px;
+    background-size: cover;
+}

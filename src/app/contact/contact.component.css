@@ -1,0 +1,14 @@
+.left,.right{
+    width:75px;
+    height: 4px;
+    background-color: rgb(44, 62, 80);
+}
+input.form-control:focus {
+    box-shadow: none;
+}
+label{
+    color:#1abc9c;
+    margin-bottom: 7px;
+    transition: .6s top;
+    top: 40px;
+}

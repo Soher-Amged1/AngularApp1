@@ -1,0 +1,39 @@
+<div [ngClass]="{'d-flex':true,'justify-content-center':true,
+'align-items-center':true}"
+[ngStyle]="{'color':'rgb(44, 62, 80)'}" >
+    <div  class="container">
+        
+        <h2 [ngClass]="{'pt-2':true,'fs-1':true,'text-center':true,
+        'text-uppercase':true,'fw-bolder':true}">CONATCT SECTION</h2>
+        <div [ngClass]="{'d-flex':true,
+        'justify-content-center':true,
+        'align-items-center':true,
+        'py-3':true}">
+            <div class="left">
+            </div>
+            <div class="mx-2">
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="right">
+            </div>
+        </div>
+        <form [ngClass]="{'w-50':true,'p-3':true,'mx-auto':true,'mt-5':true}">
+                <label  for="userName" class="label position-relative">userName : </label>
+                <input (keyup)="isEmpName()" value="" id="userName"  type="text" placeholder="userName" name="userName" 
+                [ngClass]="{'form-control' :true,'border-0':true, 'border-bottom':true, 
+                'py-3':true, 'position-relative':true}">
+                <label   for="userAge" class="label position-relative">userAge : </label>
+                <input (keyup)="isEmpAge()"id="userAge" type="text" placeholder="userAge" name="userAge" 
+                [ngClass]="{'form-control' :true,'border-0':true, 'border-bottom':true, 
+                'py-3':true, 'position-relative':true}">
+                <label for="userEmail" class="label position-relative">userEmail : </label>
+                <input (keyup)="isEmpEmail()"id="userEmail" type="text" placeholder="userEmail" name="userEmail" 
+                [ngClass]="{'form-control' :true,'border-0':true, 'border-bottom':true, 
+                'py-3':true, 'position-relative':true}">
+                <label  for="userpassword" class="label position-relative">userpassword : </label>
+                <input (keyup)="isEmppassword()"id="userpassword" type="text" placeholder="userpassword" name="userpassword" 
+                [ngClass]="{'form-control' :true,'border-0':true, 'border-bottom':true, 
+                'py-3':true, 'position-relative':true}">
+                <button class="btn mt-4 text-white mb-5" style="background-color: #1abc9c;"> send Message </button>
+          </form>
+        </div>
